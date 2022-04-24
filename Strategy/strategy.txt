@@ -1,0 +1,10 @@
+전략 패턴(strategy pattern) :
+weapon 이라는 인터페이스가 있다. 
+이를 상속받는 knife와 gun이 있다. 
+knife와 gun은 attack()이라는 기능이 있다. 
+이제 character 라는 클랙스는 attack을 하고 싶은데 
+어떤 전략으로 attack을 할 지 정해야 한다. 
+그래서 인터페이스 weapon을 받아서 attack을 수행한다. 
+(=이를 델리게이트라고 한다.) 
+이때 setWeapon은 (new knife | new gun)으로 전략 설정을 해줄 수 있다. 
+(당연히 아무런 설정이 없다면 오류)
