@@ -2,11 +2,12 @@ package Template_Method;
 
 import Template_Method.Library_GameConnect.AbsGameConnect;
 
+// 가상의 라이브러리로 부터 상속받은 구현 클래스
 public class GameConnect extends AbsGameConnect{
 
     @Override
     protected String doSecurity(String password) {
-        String encryptPassword = password + "암호화"; // 복호화 작업
+        String encryptPassword = password + "암호화"; // 암호화 작업
         return encryptPassword;
     }
 
